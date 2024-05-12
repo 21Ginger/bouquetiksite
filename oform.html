@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" href="public/logo/logo-noback.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <title>bouquetik</title>
+</head>
+<body>
+        <div class="header">
+        <div class="inner">
+        <div class="logo">
+            <img src="public/logo/logo.png"/>
+        </div>
+        <div class="headerItems">
+            <a href="index.html" class="headerItem">Главная</a>
+            <a href="about.html" class="headerItem">О нас</a>
+            <a href="nalich.html" class="headerItem">Ассортимент</a>
+            <a href="feedback.html" class="headerItem">Отзывы</a>
+        </div>
+        <div class="headerButtons">
+            
+            <div class="headerButton">
+                <a href="korz.html"><img src="public/logo/shop.png"/></a>
+            </div>
+        </div>
+        </div>
+        </div>
+
+        <main>
+          <div class="container">
+            <div class="container_of_payment">
+              <h2 class="order_title"><big>Оформление заказа</big></h2>
+              <form id="checkout-form">
+                <div class="form-step">
+                  <h3 class="step_order">Шаг 1: Контактные данные</h3>
+                  <div class="input_order">
+                    <input type="text" name="name" placeholder="ФИО" required />
+                    <input
+                      type="email"
+                      name="email"
+                      placeholder="Email"
+                      required
+                    />
+                    <input
+                      type="tel"
+                      name="phone"
+                      placeholder="Телефон"
+                      required
+                    />
+                  </div>
+                </div>
+  
+                <div class="form-step">
+                  <h3 class="step_order">Шаг 2: Адрес доставки</h3>
+                  <textarea
+                    class="address_express"
+                    name="address"
+                    placeholder="Адрес доставки"
+                    required
+                  ></textarea>
+                </div>
+  
+                <div class="form-step">
+                  <h3 class="step_order">Шаг 3: Способ оплаты</h3>
+                  <input
+                    type="radio"
+                    name="payment-method"
+                    value="cash"
+                    id="cash-payment"
+                  />
+                  <label for="cash-payment">Оплата при получении</label><br />
+                  <input
+                    type="radio"
+                    name="payment-method"
+                    value="cash"
+                    id="cash-payment"
+                  />
+                  <label for="cash-payment">Банковской картой</label><br />
+                  <input
+                    type="radio"
+                    name="payment-method"
+                    value="cash"
+                    id="cash-payment"
+                  />
+                  <label for="cash-payment">Оплата по СБП</label>
+                </div>
+  
+                <button class="pay_order" type="submit" id="checkout-button">
+                  Оформить заказ
+                </button>
+              </form>
+  
+              <div id="success-modal" class="modal_window">
+                <div class="modal-content">
+                  <div class="close_container">
+                    <span class="close">&times;</span>
+                  </div>
+                  <p>Ваш заказ успешно оформлен!</p>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </main>
+        
+ <!-- Site footer -->
+ <footer class="site-footer">
+  <div class="footer1">
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+        <h6>Bouquetik</h6>
+        <p class="text-justify">Салон цветов и флористики «Bouquetik» создан дарить эмоции - светлые и яркие, романтичные и страстные, нежные и откровенные. И относится с любовью и заботой к каждому клиенту, как к цветку с которым мы работаем.</p>
+      </div>
+
+
+      <div class="col-xs-6 col-md-3">
+        <h6>Меню</h6>
+        <ul class="footer-links">
+          <li><a href="about.html">О нас</a></li>
+          <li><a href="nalich.html">Ассортимент</a></li>
+          <li><a href="feedback.html">Отзывы</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+  </div>
+  <div class="footer1">
+    <div class="row">
+      <div class="col-md-8 col-sm-6 col-xs-12">
+        <p class="copyright-text">Copyright &copy; 2024 All Rights Reserved by 
+     <a href="index.html">Bouquetik</a>.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+        <script src="js/order.js"></script>
+        <script src="js/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" href="public/logo/logo-noback.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <title>bouquetik</title>
+</head>
+<body>
+        <div class="header">
+        <div class="inner">
+        <div class="logo">
+            <img src="public/logo/logo.png"/>
+        </div>
+        <div class="headerItems">
+            <a href="index.html" class="headerItem">Главная</a>
+            <a href="about.html" class="headerItem">О нас</a>
+            <a href="nalich.html" class="headerItem">Ассортимент</a>
+            <a href="feedback.html" class="headerItem">Отзывы</a>
+        </div>
+        <div class="headerButtons">
+            
+            <div class="headerButton">
+                <a href="korz.html"><img src="public/logo/shop.png"/></a>
+            </div>
+        </div>
+        </div>
+        </div>
+
+ 
+        <main>
+            <div class="container">
+              <div class="cart">
+                <h2>Корзина товаров</h2>
+                <div class="product">
+                  <img src="public/products/cards/pions1.jpg" alt="Product">
+                  <div class="details">
+                    <h3> <span class="nowrap">Пышные розовые пионы</span></h3>
+                    <p class="price">Цена: 6590 ₽</p>
+                  </div>
+                  <div class="quantity">
+                    <button class="decrease">-</button>
+                    <input type="number" value="0" min="0">
+                    <button class="increase">+</button>
+                  </div>
+                </div>
+                <div class="product">
+                  <img src="public/products/cards/stat1.jpg" alt="Product">
+                  <div class="details">
+                    <h3><span class="nowrap">Пышный букет ромашек и статицы</span></h3>
+                    <p class="price">Цена: 1690 ₽</p>
+                  </div>
+                  <div class="quantity">
+                    <button class="decrease">-</button>
+                    <input type="number" value="0" min="0">
+                    <button class="increase">+</button>
+                  </div>
+                </div>
+                <div class="product">
+                  <img src="public/products/cards/rose1.jpg" alt="Product">
+                  <div class="details">
+                    <h3><span class="nowrap">Французские розы в нежном оформлении</span></h3>
+                    <p class="price">Цена: 3890 ₽</p>
+                  </div>
+                  <div class="quantity">
+                    <button class="decrease">-</button>
+                    <input type="number" value="0" min="0">
+                    <button class="increase">+</button>
+                  </div>
+                </div>
+                <div class="product">
+                  <img src="public/products/cards/orh1.jpg" alt="Product">
+                  <div class="details">
+                    <h3><span class="nowrap">Корзина с белыми орхидеями и розами</span></h3>
+                    <p class="price">Цена: 8590 ₽</p>
+                  </div>
+                  <div class="quantity">
+                    <button class="decrease">-</button>
+                    <input type="number" value="0" min="0">
+                    <button class="increase">+</button>
+                  </div>
+                </div>
+                
+                <div class="total">
+                  <p>Итого: <span id="totalPrice">0 ₽</span></p>
+                </div>
+                <div class="promo">
+                  <label for="promoCode">Промокод:</label>
+                  <input type="text" id="promoCode">
+                  <button id="applyPromo">Применить</button>
+                  <p>Размер скидки: <span id="discount">0</span></p>
+                  <p class="price_with_discout">Цена со скидкой: <span id="discountedPrice">0 ₽</span></p>
+                </div>
+                <a href="oform.html" class="checkout">Оформить заказ</a>
+              </div>
+            </div>
+            
+        </main>
+        
+ <!-- Site footer -->
+ <footer class="site-footer">
+  <div class="footer1">
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+        <h6>Bouquetik</h6>
+        <p class="text-justify">Салон цветов и флористики «Bouquetik» создан дарить эмоции - светлые и яркие, романтичные и страстные, нежные и откровенные. И относится с любовью и заботой к каждому клиенту, как к цветку с которым мы работаем.</p>
+      </div>
+
+
+      <div class="col-xs-6 col-md-3">
+        <h6>Меню</h6>
+        <ul class="footer-links">
+          <li><a href="about.html">О нас</a></li>
+          <li><a href="nalich.html">Ассортимент</a></li>
+          <li><a href="feedback.html">Отзывы</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+  </div>
+  <div class="footer1">
+    <div class="row">
+      <div class="col-md-8 col-sm-6 col-xs-12">
+        <p class="copyright-text">Copyright &copy; 2024 All Rights Reserved by 
+     <a href="index.html">Bouquetik</a>.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</footer>
+        
+        <script src="js/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="js/script.js"></script>
+</body>
+</html>

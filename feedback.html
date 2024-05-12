@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" href="public/logo/logo-noback.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <title>bouquetik</title>
+</head>
+<body>
+        <div class="header">
+        <div class="inner">
+        <div class="logo">
+            <img src="public/logo/logo.png"/>
+        </div>
+        <div class="headerItems">
+            <a href="index.html" class="headerItem">Главная</a>
+            <a href="about.html" class="headerItem">О нас</a>
+            <a href="nalich.html" class="headerItem">Ассортимент</a>
+            <a href="feedback.html" class="headerItem">Отзывы</a>
+        </div>
+        <div class="headerButtons">
+            
+            <div class="headerButton">
+                <a href="korz.html"><img src="public/logo/shop.png"/></a>
+            </div>
+        </div>
+        </div>
+        </div>
+ 
+        <main>
+            <div class="container">
+              <div class="reviews_container">
+                <div class="reviews_form_container">
+                  <h2 class="reviews_form_header"> <big>Оставьте свой отзыв</big></h2>
+                  <form action="#" id="form">
+                    <label for="input_name"> Введите имя </label>
+                    <input
+                      type="text"
+                      id="input_name"
+                      class="input_form"
+                      placeholder="Имя"
+                    />
+                    <label for="input_email">
+                      Введите адрес электронной почты
+                    </label>
+                    <input
+                      type="email"
+                      id="input_email"
+                      class="input_form"
+                      placeholder="example@mail.ru"
+                    />
+                    <label for="input_device"> Введите название букета </label>
+                    <input
+                      type="text"
+                      id="input_device"
+                      class="input_form"
+                      placeholder="Букет  "
+                    />
+                    <label for="">Поставьте вашу оценку</label>
+                    <div class="rating" id="rating">
+                      <input type="radio" id="star5" name="rating" value="5" />
+                      <label for="star5">&#9733;</label>
+                      <input type="radio" id="star4" name="rating" value="4" />
+                      <label for="star4">&#9733;</label>
+                      <input type="radio" id="star3" name="rating" value="3" />
+                      <label for="star3">&#9733;</label>
+                      <input type="radio" id="star2" name="rating" value="2" />
+                      <label for="star2">&#9733;</label>
+                      <input type="radio" id="star1" name="rating" value="1" />
+                      <label for="star1">&#9733;</label>
+                    </div>
+                    <label for="text_form"> Введите текст отзыва </label>
+                    <textarea id="text_form" cols="30" rows="10"></textarea>
+                    
+                    <button class="button_form">Отправить</button>
+                  </form>
+                </div>
+    
+                <div id="popup" class="popup hidden">
+                  <p class="popup_text">Ваш отзыв отправлен!</p>
+                </div>
+    
+                <div class="review_items">
+                  <h2 class="review_customers">Отзывы других покупателей</h2>
+                  <div class="review_item">
+                    <span class="review_item_name">Никита</span>
+                    <span class="review_item_date">03 Мая 2024</span>
+                    <div class="review_item_rating">
+                      <span id="rating_1">&#9733;</span>
+                      <span id="rating_2">&#9733;</span>
+                      <span id="rating_3">&#9733;</span>
+                      <span id="rating_4">&#9733;</span>
+                      <span id="rating_5">&#9733;</span>
+                      <span id="rating_number">5,0</span>
+                    </div>
+                    <div class="device_model">
+                      <span class="model">Букет:</span>
+                      <span class="model_name">Букет из альстромерий</span>
+                    </div>
+                    <div class="comment_area">
+                      <p class="comment_text">
+                        Являюсь давним клиентом и доволен подходом персонала к своему клиенту. Знают что необходимо клиенту. Нравиться то что быстро могут собрать цветочную композицию. цветы всегда свежие. Рекомендую
+                      </p>
+                    </div>
+                  </div>
+                  <div class="review_item">
+                    <span class="review_item_name">Петр</span>
+                    <span class="review_item_date">30 Марта 2024</span>
+                    <div class="review_item_rating">
+                      <span id="rating_1">&#9733;</span>
+                      <span id="rating_2">&#9733;</span>
+                      <span id="rating_3">&#9733;</span>
+                      <span id="rating_4">&#9733;</span>
+                      <span id="rating_5">&#9733;</span>
+                      <span id="rating_number">5,0</span>
+                    </div>
+                    <div class="device_model">
+                      <span class="model">Букет:</span>
+                      <span class="model_name">Авторский Букет "Охапка Ромашек"</span>
+                    </div>
+                    <div class="comment_area">
+                      <p class="comment_text">
+                        Моей девушке очень понравились цветы, хорошие цены и качество. Персонал добрый, время доставки быстрое. Хочу сказать спасибо, очень
+рекомендую!!!
+                      </p>
+                    </div>
+                  </div>
+                  <div class="review_item">
+                    <span class="review_item_name">Владимир</span>
+                    <span class="review_item_date">15 февраля 2024</span>
+                    <div class="review_item_rating">
+                      <span id="rating_1">&#9733;</span>
+                      <span id="rating_2">&#9733;</span>
+                      <span id="rating_3">&#9733;</span>
+                      <span id="rating_4">&#9733;</span>
+                      <span id="rating_5">&#9733;</span>
+                      <span id="rating_number">5,0</span>
+                    </div>
+                    <div class="device_model">
+                      <span class="model">Букет:</span>
+                      <span class="model_name">Пышные Розовые Пионы</span>
+                    </div>
+                    <div class="comment_area">
+                      <p class="comment_text">
+                        Прекрасный магазин! Не раз уже заказывал букет. Очень приятное общение с сотрудниками, учитывают все пожелания, букеты всегда из свежих цветов, собраны со вкусом, флористам моё почтение. К цветам идут мешочки с водой, рекомендации по уходу и пакетик со специальной смесью для поддержания красивого состояния цветов. Девушка неизменно в восторге, спасибо!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </main>
+
+ <!-- Site footer -->
+ <footer class="site-footer">
+  <div class="footer1">
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+        <h6>Bouquetik</h6>
+        <p class="text-justify">Салон цветов и флористики «Bouquetik» создан дарить эмоции - светлые и яркие, романтичные и страстные, нежные и откровенные. И относится с любовью и заботой к каждому клиенту, как к цветку с которым мы работаем.</p>
+      </div>
+
+
+      <div class="col-xs-6 col-md-3">
+        <h6>Меню</h6>
+        <ul class="footer-links">
+          <li><a href="about.html">О нас</a></li>
+          <li><a href="nalich.html">Ассортимент</a></li>
+          <li><a href="feedback.html">Отзывы</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+  </div>
+  <div class="footer1">
+    <div class="row">
+      <div class="col-md-8 col-sm-6 col-xs-12">
+        <p class="copyright-text">Copyright &copy; 2024 All Rights Reserved by 
+     <a href="index.html">Bouquetik</a>.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="js/script.js"></script>
+        
+        <script src="js/addFile.js"></script>
+</body>
+</html>
